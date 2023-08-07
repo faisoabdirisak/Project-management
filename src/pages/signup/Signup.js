@@ -15,6 +15,10 @@ export default function Signip() {
   const handleSubmit = (e) => {
     e.preventDefault()
     signup(email, password, displayName, thumbnail)
+    setEmail('')
+    setPassword('')
+    setDisplayName('')
+    setThumbnail(null)
   }
 
   const handleFileChange = (e) => {
